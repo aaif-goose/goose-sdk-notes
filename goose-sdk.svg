@@ -154,7 +154,7 @@
 
   <!-- Sprout (blue) connecting to Rust API -->
   <rect x="820" y="510" width="140" height="50" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="890" y="533" text-anchor="middle" font-size="13" font-weight="700" fill="#58a6ff">Sprout</text>
+  <text x="890" y="533" text-anchor="middle" font-size="13" font-weight="700" fill="#58a6ff">Applications ...</text>
   <text x="890" y="548" text-anchor="middle" font-size="9" fill="#8b949e">embedder / host app</text>
 
   <!-- Sprout --> Rust API -->
