@@ -35,7 +35,7 @@
   <rect x="40" y="113" width="14" height="14" rx="3" fill="none" stroke="#ffa657" stroke-width="2"/>
   <text x="62" y="125" font-size="10" fill="#e6edf3">Open protocols &amp; standards</text>
   <rect x="40" y="133" width="14" height="14" rx="3" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="2"/>
-  <text x="62" y="145" font-size="10" fill="#e6edf3">Not started</text>
+  <text x="62" y="145" font-size="10" fill="#e6edf3">In progress</text>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- SURFACES: Reference Desktop client, TUI    -->
@@ -74,8 +74,8 @@
   <text x="230" y="290" text-anchor="middle" font-size="12" font-weight="600" fill="#58a6ff">Perception</text>
   <line x1="280" y1="280" x2="400" y2="310" stroke="#8b949e" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
 
-  <!-- ACP+ --> Goose Core -->
-  <line x1="590" y1="332" x2="590" y2="385" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- ACP+ --> Rust API (planned) -->
+  <path d="M 780 311 C 845 311, 855 360, 870 425" fill="none" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- GOOSE CORE                                  -->
@@ -138,6 +138,14 @@
   <!-- Goose Core ↔ Rust API -->
   <line x1="780" y1="450" x2="820" y2="450" stroke="#8b949e" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
 
+  <!-- Applications (blue app surface) — top of right column, peer with other apps -->
+  <rect x="820" y="100" width="140" height="44" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="890" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#58a6ff">Applications …</text>
+  <text x="890" y="135" text-anchor="middle" font-size="9" fill="#8b949e">embedder / host app</text>
+
+  <!-- Applications --> Rust API (curve down the right side, around the bindings) -->
+  <path d="M 960 122 C 1000 122, 1000 450, 960 450" fill="none" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arr)"/>
+
   <!-- Language bindings cluster (off Rust API, to the right) -->
   <rect x="820" y="160" width="140" height="40" rx="8" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
   <text x="890" y="184" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Swift</text>
@@ -151,14 +159,6 @@
 
   <!-- Language bindings → Rust API (arrows going down) -->
   <line x1="890" y1="300" x2="890" y2="425" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Sprout (blue) connecting to Rust API -->
-  <rect x="820" y="510" width="140" height="50" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="890" y="533" text-anchor="middle" font-size="13" font-weight="700" fill="#58a6ff">Applications ...</text>
-  <text x="890" y="548" text-anchor="middle" font-size="9" fill="#8b949e">embedder / host app</text>
-
-  <!-- Sprout --> Rust API -->
-  <line x1="890" y1="510" x2="890" y2="475" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- PROVIDERS LAYER                             -->
