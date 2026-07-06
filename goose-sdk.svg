@@ -168,15 +168,10 @@
   <rect x="240" y="495" width="130" height="40" rx="8" fill="#161b22" stroke="#ffa657" stroke-width="1.5" filter="url(#shadow)"/>
   <text x="305" y="520" text-anchor="middle" font-size="12" font-weight="600" fill="#ffa657">Plugins</text>
 
-  <!-- A2A (dotted, orange) — below Plugins -->
-  <rect x="240" y="545" width="130" height="40" rx="8" fill="#161b22" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#shadow)"/>
-  <text x="305" y="570" text-anchor="middle" font-size="12" font-weight="600" fill="#ffa657">A2A</text>
-
-  <!-- Goose Core ← MCP / Skills / Plugins / A2A (arrows from left into Core) -->
+  <!-- Goose Core ← MCP / Skills / Plugins (arrows from left into Core) -->
   <line x1="370" y1="415" x2="400" y2="437" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
   <line x1="370" y1="465" x2="400" y2="465" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
   <line x1="370" y1="515" x2="400" y2="500" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="370" y1="565" x2="400" y2="540" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- PROVIDERS LAYER                             -->
