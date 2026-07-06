@@ -38,7 +38,8 @@
   <text x="62" y="145" font-size="10" fill="#e6edf3">In progress</text>
 
   <!-- ═══════════════════════════════════════════ -->
-  <!-- SURFACES: Reference Desktop client, TUI    -->
+  <!-- SURFACES: Reference Desktop client, TUI,    -->
+  <!-- Applications                                -->
   <!-- ═══════════════════════════════════════════ -->
 
   <!-- Reference Desktop client -->
@@ -46,66 +47,111 @@
   <text x="490" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Reference Desktop client</text>
   <text x="490" y="225" text-anchor="middle" font-size="9" fill="#8b949e">first-party reference UI</text>
 
-  <!-- TUI (now green) -->
-  <rect x="660" y="190" width="120" height="44" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="720" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">TUI</text>
-  <text x="720" y="225" text-anchor="middle" font-size="9" fill="#8b949e">terminal UI</text>
+  <!-- TUI -->
+  <rect x="630" y="190" width="110" height="44" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="685" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">TUI</text>
+  <text x="685" y="225" text-anchor="middle" font-size="9" fill="#8b949e">terminal UI</text>
+
+  <!-- Applications (blue app surface) — sits directly over the Rust API arm -->
+  <rect x="775" y="190" width="140" height="44" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="845" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#58a6ff">Applications …</text>
+  <text x="845" y="225" text-anchor="middle" font-size="9" fill="#8b949e">embedder / host app</text>
 
   <!-- Reference Desktop --> ACP+ -->
-  <line x1="490" y1="234" x2="540" y2="285" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="490" y1="234" x2="535" y2="277" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- TUI --> ACP+ -->
-  <line x1="720" y1="234" x2="640" y2="285" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="685" y1="234" x2="632" y2="277" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Applications --> Rust API arm (in-process, peer of ACP+) -->
+  <line x1="845" y1="234" x2="830" y2="277" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
-  <!-- ACP+ protocol bar                           -->
+  <!-- ACP+ protocol bar (rides on the Rust API)   -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="400" y="290" width="380" height="42" rx="8" fill="#2d1f00" stroke="#ffa657" stroke-width="2" filter="url(#shadow)"/>
-  <text x="590" y="316" text-anchor="middle" font-size="14" font-weight="700" fill="#ffa657">ACP+</text>
+  <rect x="400" y="282" width="330" height="42" rx="8" fill="#2d1f00" stroke="#ffa657" stroke-width="2" filter="url(#shadow)"/>
+  <text x="565" y="308" text-anchor="middle" font-size="14" font-weight="700" fill="#ffa657">ACP+</text>
 
   <!-- ... (future experiences) --> ACP+ -->
   <rect x="180" y="200" width="100" height="34" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#shadow)"/>
   <text x="230" y="222" text-anchor="middle" font-size="14" font-weight="600" fill="#8b949e">…</text>
-  <line x1="280" y1="217" x2="400" y2="300" stroke="#8b949e" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <line x1="280" y1="217" x2="400" y2="293" stroke="#8b949e" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
 
   <!-- Goose Perception ↔ ACP+ -->
   <rect x="180" y="255" width="100" height="40" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
   <text x="230" y="276" text-anchor="middle" font-size="12" font-weight="600" fill="#58a6ff">Goose</text>
   <text x="230" y="290" text-anchor="middle" font-size="12" font-weight="600" fill="#58a6ff">Perception</text>
-  <line x1="280" y1="280" x2="400" y2="310" stroke="#8b949e" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <line x1="280" y1="280" x2="400" y2="305" stroke="#8b949e" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
 
-  <!-- ACP+ --> Rust API (planned) -->
-  <path d="M 780 311 C 845 311, 855 360, 870 425" fill="none" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- RUST API — L-shaped layer:                  -->
+  <!-- horizontal bar under ACP+ (ACP+ depends on  -->
+  <!-- it), vertical arm rising beside ACP+ as a   -->
+  <!-- peer surface for in-process embedding       -->
+  <!-- ═══════════════════════════════════════════ -->
+  <path d="M 408 338
+           H 746 Q 750 338 750 334
+           V 290 Q 750 282 758 282
+           H 882 Q 890 282 890 290
+           V 368 Q 890 376 882 376
+           H 408 Q 400 376 400 368
+           V 346 Q 400 338 408 338 Z"
+        fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="820" y="320" text-anchor="middle" font-size="13" font-weight="700" fill="#7ee787">Rust API</text>
+  <text x="820" y="336" text-anchor="middle" font-size="9" fill="#8b949e">native crate / FFI</text>
+  <text x="420" y="361" font-size="10" fill="#7ee787" fill-opacity="0.85">in-process kernel surface</text>
+
+  <!-- ACP+ sits on the Rust API -->
+  <line x1="470" y1="326" x2="470" y2="336" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="660" y1="326" x2="660" y2="336" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Rust API sits on Goose Core -->
+  <line x1="470" y1="378" x2="470" y2="393" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="660" y1="378" x2="660" y2="393" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Language bindings — small, off the side of the Rust API arm -->
+  <rect x="920" y="288" width="100" height="26" rx="6" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="970" y="305" text-anchor="middle" font-size="10" font-weight="700" fill="#7ee787">Swift</text>
+  <line x1="920" y1="301" x2="893" y2="301" stroke="#8b949e" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <rect x="920" y="320" width="100" height="26" rx="6" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="970" y="337" text-anchor="middle" font-size="10" font-weight="700" fill="#7ee787">Kotlin</text>
+  <line x1="920" y1="333" x2="893" y2="333" stroke="#8b949e" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <rect x="920" y="352" width="100" height="26" rx="6" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="5,3" filter="url(#shadow)"/>
+  <text x="970" y="363" text-anchor="middle" font-size="10" font-weight="700" fill="#7ee787">…</text>
+  <text x="970" y="373" text-anchor="middle" font-size="7" fill="#8b949e">Python · TS · Go</text>
+  <line x1="920" y1="365" x2="893" y2="365" stroke="#8b949e" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- GOOSE CORE                                  -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="400" y="385" width="380" height="205" rx="12" fill="#161b22" stroke="#7ee787" stroke-width="2" filter="url(#shadow)"/>
-  <text x="590" y="413" text-anchor="middle" font-size="15" font-weight="700" fill="#7ee787">Goose Core</text>
-  <line x1="420" y1="423" x2="760" y2="423" stroke="#30363d" stroke-width="1"/>
+  <rect x="400" y="395" width="380" height="195" rx="12" fill="#161b22" stroke="#7ee787" stroke-width="2" filter="url(#shadow)"/>
+  <text x="590" y="421" text-anchor="middle" font-size="15" font-weight="700" fill="#7ee787">Goose Core</text>
+  <line x1="420" y1="431" x2="760" y2="431" stroke="#30363d" stroke-width="1"/>
 
-  <text x="420" y="443" font-size="10" fill="#e6edf3">• Agent loop</text>
-  <text x="420" y="459" font-size="10" fill="#e6edf3">• Sessions</text>
-  <text x="420" y="475" font-size="10" fill="#e6edf3">• Extensions</text>
-  <text x="420" y="491" font-size="10" fill="#e6edf3">• Security</text>
-  <text x="560" y="443" font-size="10" fill="#e6edf3">• Sub-agents</text>
-  <text x="560" y="459" font-size="10" fill="#e6edf3">• Context mgmt</text>
-  <text x="560" y="475" font-size="10" fill="#e6edf3">• Scheduling</text>
+  <text x="420" y="451" font-size="10" fill="#e6edf3">• Agent loop</text>
+  <text x="420" y="467" font-size="10" fill="#e6edf3">• Sessions</text>
+  <text x="420" y="483" font-size="10" fill="#e6edf3">• Extensions</text>
+  <text x="420" y="499" font-size="10" fill="#e6edf3">• Security</text>
+  <text x="560" y="451" font-size="10" fill="#e6edf3">• Sub-agents</text>
+  <text x="560" y="467" font-size="10" fill="#e6edf3">• Context mgmt</text>
+  <text x="560" y="483" font-size="10" fill="#e6edf3">• Scheduling</text>
   <!-- Striped underlays for "not started" items -->
-  <rect x="558" y="481" width="130" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="560" y="491" font-size="10" fill="#7ee787">• Sandbox</text>
-  <rect x="558" y="497" width="130" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="560" y="507" font-size="10" fill="#7ee787">• Benchmarking</text>
-  <rect x="558" y="513" width="170" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="560" y="523" font-size="10" fill="#7ee787">• Model fit optimisation</text>
+  <rect x="558" y="489" width="130" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="560" y="499" font-size="10" fill="#7ee787">• Sandbox</text>
+  <rect x="558" y="505" width="130" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="560" y="515" font-size="10" fill="#7ee787">• Benchmarking</text>
+  <rect x="558" y="521" width="170" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="560" y="531" font-size="10" fill="#7ee787">• Model fit optimisation</text>
 
   <!-- CLI nested inside Goose Core -->
-  <rect x="420" y="535" width="120" height="44" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.5"/>
-  <text x="480" y="555" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">CLI</text>
-  <text x="480" y="570" text-anchor="middle" font-size="9" fill="#8b949e">first-party binary</text>
+  <rect x="420" y="538" width="120" height="44" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.5"/>
+  <text x="480" y="558" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">CLI</text>
+  <text x="480" y="573" text-anchor="middle" font-size="9" fill="#8b949e">first-party binary</text>
 
   <!-- ═══════════════════════════════════════════ -->
-  <!-- MCP / Skills / Plugins — now LEFT of Core   -->
+  <!-- MCP / Skills / Plugins — LEFT of Core       -->
   <!-- ═══════════════════════════════════════════ -->
   <rect x="240" y="395" width="130" height="40" rx="8" fill="#161b22" stroke="#ffa657" stroke-width="1.5" filter="url(#shadow)"/>
   <text x="305" y="420" text-anchor="middle" font-size="12" font-weight="600" fill="#ffa657">MCP</text>
@@ -123,42 +169,8 @@
   <!-- Goose Core ← MCP / Skills / Plugins / A2A (arrows from left into Core) -->
   <line x1="370" y1="415" x2="400" y2="437" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
   <line x1="370" y1="465" x2="400" y2="465" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="370" y1="515" x2="400" y2="495" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="370" y1="515" x2="400" y2="500" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
   <line x1="370" y1="565" x2="400" y2="555" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
-
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- RUST API + language bindings + SPROUT       -->
-  <!-- ═══════════════════════════════════════════ -->
-
-  <!-- Rust API box (right of Goose Core) -->
-  <rect x="820" y="425" width="140" height="50" rx="10" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="890" y="448" text-anchor="middle" font-size="13" font-weight="700" fill="#7ee787">Rust API</text>
-  <text x="890" y="463" text-anchor="middle" font-size="9" fill="#8b949e">native crate / FFI</text>
-
-  <!-- Goose Core ↔ Rust API -->
-  <line x1="780" y1="450" x2="820" y2="450" stroke="#8b949e" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
-
-  <!-- Applications (blue app surface) — top of right column, peer with other apps -->
-  <rect x="820" y="100" width="140" height="44" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="890" y="120" text-anchor="middle" font-size="12" font-weight="700" fill="#58a6ff">Applications …</text>
-  <text x="890" y="135" text-anchor="middle" font-size="9" fill="#8b949e">embedder / host app</text>
-
-  <!-- Applications --> Rust API (curve down the right side, around the bindings) -->
-  <path d="M 960 122 C 1000 122, 1000 450, 960 450" fill="none" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Language bindings cluster (off Rust API, to the right) -->
-  <rect x="820" y="160" width="140" height="40" rx="8" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="890" y="184" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Swift</text>
-
-  <rect x="820" y="210" width="140" height="40" rx="8" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="890" y="234" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Kotlin</text>
-
-  <rect x="820" y="260" width="140" height="40" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#shadow)"/>
-  <text x="890" y="280" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">…</text>
-  <text x="890" y="294" text-anchor="middle" font-size="8" fill="#8b949e">Python · TS · Go</text>
-
-  <!-- Language bindings → Rust API (arrows going down) -->
-  <line x1="890" y1="300" x2="890" y2="425" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- PROVIDERS LAYER                             -->
