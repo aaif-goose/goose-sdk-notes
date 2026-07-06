@@ -132,7 +132,7 @@
   <!-- ═══════════════════════════════════════════ -->
   <!-- GOOSE CORE                                  -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="400" y="395" width="490" height="160" rx="12" fill="#161b22" stroke="#7ee787" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="400" y="395" width="490" height="170" rx="12" fill="#161b22" stroke="#7ee787" stroke-width="2" filter="url(#shadow)"/>
   <text x="645" y="421" text-anchor="middle" font-size="15" font-weight="700" fill="#7ee787">Goose Core</text>
   <line x1="420" y1="431" x2="870" y2="431" stroke="#30363d" stroke-width="1"/>
 
@@ -140,16 +140,19 @@
   <text x="430" y="467" font-size="10" fill="#e6edf3">• Sessions</text>
   <text x="430" y="483" font-size="10" fill="#e6edf3">• Extensions</text>
   <text x="430" y="499" font-size="10" fill="#e6edf3">• Security</text>
-  <text x="620" y="451" font-size="10" fill="#e6edf3">• Sub-agents</text>
+  <text x="430" y="515" font-size="10" fill="#e6edf3">• Code Mode</text>
+  <text x="620" y="451" font-size="10" fill="#e6edf3">• Subagents</text>
   <text x="620" y="467" font-size="10" fill="#e6edf3">• Context mgmt</text>
-  <text x="620" y="483" font-size="10" fill="#e6edf3">• Scheduling</text>
-  <!-- Striped underlays for "not started" items -->
-  <rect x="618" y="489" width="130" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="620" y="499" font-size="10" fill="#7ee787">• Sandbox</text>
-  <rect x="618" y="505" width="130" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="620" y="515" font-size="10" fill="#7ee787">• Benchmarking</text>
-  <rect x="618" y="521" width="170" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="620" y="531" font-size="10" fill="#7ee787">• Model fit optimisation</text>
+  <text x="620" y="483" font-size="10" fill="#e6edf3">• Automations &amp; scheduling</text>
+  <!-- Striped underlays for "in progress" items -->
+  <rect x="618" y="489" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="620" y="499" font-size="10" fill="#7ee787">• Pluggable memory system</text>
+  <rect x="618" y="505" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="620" y="515" font-size="10" fill="#7ee787">• Sandbox / run anywhere</text>
+  <rect x="618" y="521" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="620" y="531" font-size="10" fill="#7ee787">• Router / model selection</text>
+  <rect x="618" y="537" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="620" y="547" font-size="10" fill="#7ee787">• Benchmarking</text>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- MCP / Skills / Plugins — LEFT of Core       -->
@@ -178,15 +181,15 @@
   <!-- ═══════════════════════════════════════════ -->
 
   <!-- Goose Core --> Providers bar -->
-  <line x1="590" y1="555" x2="590" y2="625" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="590" y1="565" x2="590" y2="625" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Providers bar -->
   <rect x="160" y="625" width="800" height="42" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="2" filter="url(#shadow)"/>
   <text x="320" y="651" text-anchor="middle" font-size="14" font-weight="700" fill="#7ee787">Providers</text>
 
-  <!-- Routing chip nested inside Providers bar -->
+  <!-- Router chip nested inside Providers bar (see "Router / model selection" in Core) -->
   <rect x="780" y="634" width="160" height="24" rx="6" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.5"/>
-  <text x="860" y="651" text-anchor="middle" font-size="11" font-weight="700" fill="#7ee787">Routing</text>
+  <text x="860" y="651" text-anchor="middle" font-size="11" font-weight="700" fill="#7ee787">Router</text>
 
   <!-- Lines from Providers bar down to each child -->
   <line x1="230" y1="667" x2="230" y2="725" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -227,13 +230,19 @@
   <!-- Providers bar left edge down to ACP -->
   <polyline points="160,646 80,646 80,841 260,841" fill="none" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <!-- Other Agents -->
-  <rect x="470" y="835" width="150" height="40" rx="8" fill="#0d1117" stroke="#58a6ff" stroke-width="1.2"/>
-  <text x="545" y="860" text-anchor="middle" font-size="10" font-weight="600" fill="#58a6ff">Other Agents</text>
-  <rect x="490" y="820" width="150" height="40" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="565" y="845" text-anchor="middle" font-size="11" font-weight="600" fill="#58a6ff">Claude Code …</text>
+  <!-- Other Agents — a natural-looking cascade of cards -->
+  <text x="500" y="798" font-size="9" font-style="italic" fill="#8b949e">Other Agents</text>
+
+  <rect x="521" y="804" width="150" height="40" rx="8" fill="#0d1117" stroke="#58a6ff" stroke-width="1" stroke-opacity="0.55"/>
+  <text x="533" y="818" font-size="10" font-weight="600" fill="#58a6ff" fill-opacity="0.55">Gemini CLI …</text>
+
+  <rect x="505" y="820" width="150" height="40" rx="8" fill="#11161d" stroke="#58a6ff" stroke-width="1.2" stroke-opacity="0.75"/>
+  <text x="517" y="834" font-size="10" font-weight="600" fill="#58a6ff" fill-opacity="0.75">Codex</text>
+
+  <rect x="489" y="836" width="150" height="40" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="564" y="861" text-anchor="middle" font-size="11" font-weight="600" fill="#58a6ff">Claude Code</text>
 
   <!-- Agents --> ACP -->
-  <line x1="490" y1="841" x2="420" y2="841" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="489" y1="852" x2="420" y2="846" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
 </svg>

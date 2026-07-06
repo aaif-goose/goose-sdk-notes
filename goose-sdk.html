@@ -571,7 +571,7 @@
             <li><strong>Security</strong> — prompt injection detection, tool permissions, malware checks</li>
             <li><strong>Context management</strong> — auto-compaction, token counting, cost tracking</li>
             <li><strong>Extensions</strong> — MCP + rMCP, Skills, Recipes, lifecycle hooks</li>
-            <li><strong>Sub-agents, scheduling, sandboxed execution</strong></li>
+            <li><strong>Subagents, automations &amp; scheduling, Code Mode, sandboxing</strong></li>
           </ul>
         </div>
       </div>
@@ -793,20 +793,21 @@
             <li><strong>Token counting</strong> — tiktoken BPE</li>
             <li><strong>Cost tracking</strong> — per-provider, cache-aware</li>
             <li><strong>Session persistence</strong> — create, resume, fork, export</li>
-            <li><strong>Chat recall</strong> across sessions</li>
+            <li><strong>Pluggable memory system</strong> — MCP memory, chat recall, persistent instructions <em class="signet">(consolidating)</em></li>
           </ul>
         </div>
         <div class="panel vrule">
           <span class="label">Agent capabilities</span>
           <h4>Beyond a single loop</h4>
           <ul class="fine">
-            <li><strong>Sub-agents</strong> — parallel, isolated context</li>
-            <li><strong>Scheduling</strong> — background &amp; recurring tasks</li>
-            <li><strong>Sandboxed code execution</strong> — Docker <em class="signet">(not started)</em></li>
+            <li><strong>Subagents</strong> — parallel, recipe-instrumented, isolated context</li>
+            <li><strong>Automations &amp; scheduling</strong> — cron jobs; inspect, run, pause</li>
+            <li><strong>Code Mode</strong> — agent executes JavaScript to call tools</li>
+            <li><strong>Sandbox / run anywhere</strong> — local, Docker, remote <em class="signet">(partial)</em></li>
             <li><strong>Tool-loop detection</strong></li>
             <li><strong>Retry with backoff</strong></li>
             <li><strong>Benchmarking</strong> — built-in eval harness <em class="signet">(not started)</em></li>
-            <li><strong>Model fit optimisation</strong> — pick the right model per task <em class="signet">(not started)</em></li>
+            <li><strong>Router / model selection</strong> — pick model &amp; provider per query <em class="signet">(PoC)</em></li>
           </ul>
         </div>
       </div>
@@ -829,7 +830,7 @@
           <ul class="fine">
             <li><strong>Cloud</strong> — Anthropic, OpenAI, Bedrock, Databricks, xAI, Groq…</li>
             <li><strong>Local</strong> — Ollama, llama.cpp, Candle</li>
-            <li><strong>Routing</strong> — task-aware model selection across providers <em class="signet">(not started)</em></li>
+            <li><strong>Router</strong> — dynamic model selection across providers <em class="signet">(PoC)</em></li>
             <li><strong>Mesh</strong> — distributed model routing</li>
             <li><strong>Claude Code</strong> — as a provider via ACP</li>
             <li><strong>Observability</strong> — OpenTelemetry + Langfuse</li>
@@ -879,10 +880,10 @@
           <p>Discoverable <code>SKILL.md</code> files with frontmatter. Project-scoped (<code>.goose/skills/</code>) or global (<code>~/.agents/skills/</code>). Loaded by the agent on demand.</p>
         </div>
         <div class="panel vrule">
-          <span class="label">iv. Recipes &amp; Sub-agents</span>
+          <span class="label">iv. Recipes &amp; Subagents</span>
           <h4>Configurable agency</h4>
-          <p><strong>Recipes:</strong> declarative YAML — prompt, extensions, model, parameters. Shareable, deeplinkable, schedulable.</p>
-          <p style="margin-top: 6px;"><strong>Sub-agents:</strong> child agents with isolated contexts for parallel workstreams.</p>
+          <p><strong>Recipes:</strong> declarative YAML — prompt, extensions, model, parameters, success criteria. Shareable, deeplinkable, schedulable.</p>
+          <p style="margin-top: 6px;"><strong>Subagents:</strong> child agents run in parallel, each instrumented by a recipe, with isolated contexts.</p>
         </div>
       </div>
       </div>
@@ -1131,7 +1132,7 @@ providers.providers
         </div>
         <div class="panel">
           <span class="label">iii. Extend, don't fork</span>
-          <p>MCP + rMCP for tools. Skills for knowledge. Recipes for config. Hooks for policy. Sub-agents for parallelism.</p>
+          <p>MCP + rMCP for tools. Skills for knowledge. Recipes for config. Hooks for policy. Subagents for parallelism.</p>
         </div>
         <div class="panel vrule">
           <span class="label">iv. Open protocol</span>
