@@ -77,7 +77,10 @@
   <text x="845" y="225" text-anchor="middle" font-size="9" fill="#8b949e">embedder / host app</text>
 
   <!-- Applications --> Rust API arm (in-process, peer of ACP+) -->
-  <line x1="845" y1="234" x2="830" y2="277" stroke="#0000ff" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="855" y1="234" x2="840" y2="277" stroke="#0000ff" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Applications --> ACP+ (protocol route) -->
+  <line x1="800" y1="234" x2="715" y2="280" stroke="#0000ff" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- ACP+ protocol bar (rides on the Rust API)   -->
