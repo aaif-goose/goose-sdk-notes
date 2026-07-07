@@ -8,12 +8,12 @@
     </filter>
     <!-- Diagonal stripe pattern for "Not started" items -->
     <pattern id="stripeGreen" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)">
-      <rect width="8" height="8" fill="#0f1d0b"/>
-      <rect width="3" height="8" fill="#7ee787" fill-opacity="0.22"/>
+      <rect width="8" height="8" fill="#100f51"/>
+      <rect width="3" height="8" fill="#ffffff" fill-opacity="0.22"/>
     </pattern>
     <pattern id="stripeGreenInline" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
       <rect width="6" height="6" fill="#161b22"/>
-      <rect width="2" height="6" fill="#7ee787" fill-opacity="0.28"/>
+      <rect width="2" height="6" fill="#ffffff" fill-opacity="0.28"/>
     </pattern>
   </defs>
 
@@ -28,13 +28,13 @@
   <rect x="20" y="35" width="220" height="120" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
   <text x="40" y="57" font-size="11" font-weight="700" fill="#e6edf3">Key</text>
   <line x1="40" y1="65" x2="220" y2="65" stroke="#30363d" stroke-width="1"/>
-  <rect x="40" y="73" width="14" height="14" rx="3" fill="none" stroke="#7ee787" stroke-width="2"/>
+  <rect x="40" y="73" width="14" height="14" rx="3" fill="none" stroke="#ffffff" stroke-width="2"/>
   <text x="62" y="85" font-size="10" fill="#e6edf3">Goose core responsibility</text>
-  <rect x="40" y="93" width="14" height="14" rx="3" fill="none" stroke="#58a6ff" stroke-width="2"/>
+  <rect x="40" y="93" width="14" height="14" rx="3" fill="none" stroke="#0000ff" stroke-width="2"/>
   <text x="62" y="105" font-size="10" fill="#e6edf3">Community &amp; 3rd party</text>
-  <rect x="40" y="113" width="14" height="14" rx="3" fill="none" stroke="#ffa657" stroke-width="2"/>
+  <rect x="40" y="113" width="14" height="14" rx="3" fill="none" stroke="#ff00ff" stroke-width="2"/>
   <text x="62" y="125" font-size="10" fill="#e6edf3">Open protocols &amp; standards</text>
-  <rect x="40" y="133" width="14" height="14" rx="3" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="2"/>
+  <rect x="40" y="133" width="14" height="14" rx="3" fill="url(#stripeGreen)" stroke="#ffffff" stroke-width="2"/>
   <text x="62" y="145" font-size="10" fill="#e6edf3">In progress</text>
 
   <!-- ═══════════════════════════════════════════ -->
@@ -44,50 +44,50 @@
   <!-- ═══════════════════════════════════════════ -->
 
   <!-- Reference Desktop -->
-  <rect x="150" y="190" width="150" height="44" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="225" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Reference Desktop</text>
+  <rect x="150" y="190" width="150" height="44" rx="8" fill="#100f51" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="225" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Reference Desktop</text>
   <text x="225" y="225" text-anchor="middle" font-size="9" fill="#8b949e">first-party reference UI</text>
   <line x1="240" y1="234" x2="415" y2="280" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Buzz -->
-  <rect x="315" y="190" width="90" height="44" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="360" y="216" text-anchor="middle" font-size="12" font-weight="600" fill="#58a6ff">Buzz</text>
+  <rect x="315" y="190" width="90" height="44" rx="8" fill="#161b22" stroke="#0000ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="360" y="216" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Buzz</text>
   <line x1="380" y1="234" x2="465" y2="280" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Block's enterprise client -->
-  <rect x="420" y="190" width="140" height="44" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="490" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#58a6ff">Block&#8217;s enterprise</text>
-  <text x="490" y="222" text-anchor="middle" font-size="11" font-weight="600" fill="#58a6ff">client</text>
+  <rect x="420" y="190" width="140" height="44" rx="8" fill="#161b22" stroke="#0000ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="490" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Block&#8217;s enterprise</text>
+  <text x="490" y="222" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">client</text>
   <line x1="510" y1="234" x2="540" y2="280" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Goose Perception ↔ ACP+ -->
-  <rect x="575" y="190" width="115" height="44" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="632" y="208" text-anchor="middle" font-size="12" font-weight="600" fill="#58a6ff">Goose</text>
-  <text x="632" y="222" text-anchor="middle" font-size="12" font-weight="600" fill="#58a6ff">Perception</text>
+  <rect x="575" y="190" width="115" height="44" rx="8" fill="#161b22" stroke="#0000ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="632" y="208" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Goose</text>
+  <text x="632" y="222" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Perception</text>
   <line x1="632" y1="234" x2="625" y2="280" stroke="#8b949e" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
 
   <!-- ... (future experiences) -->
-  <rect x="702" y="190" width="55" height="44" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#shadow)"/>
+  <rect x="702" y="190" width="55" height="44" rx="8" fill="#161b22" stroke="#0000ff" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#shadow)"/>
   <text x="729" y="217" text-anchor="middle" font-size="14" font-weight="600" fill="#8b949e">…</text>
   <line x1="725" y1="234" x2="705" y2="280" stroke="#8b949e" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
 
   <!-- Applications (blue app surface) — sits directly over the Rust API arm -->
-  <rect x="775" y="190" width="140" height="44" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="845" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#58a6ff">Applications …</text>
+  <rect x="775" y="190" width="140" height="44" rx="8" fill="#161b22" stroke="#0000ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="845" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Applications …</text>
   <text x="845" y="225" text-anchor="middle" font-size="9" fill="#8b949e">embedder / host app</text>
 
   <!-- Applications --> Rust API arm (in-process, peer of ACP+) -->
-  <line x1="845" y1="234" x2="830" y2="277" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="845" y1="234" x2="830" y2="277" stroke="#0000ff" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- ACP+ protocol bar (rides on the Rust API)   -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="400" y="282" width="330" height="42" rx="8" fill="#2d1f00" stroke="#ffa657" stroke-width="2" filter="url(#shadow)"/>
-  <text x="565" y="308" text-anchor="middle" font-size="14" font-weight="700" fill="#ffa657">ACP+</text>
+  <rect x="400" y="282" width="330" height="42" rx="8" fill="#2a0033" stroke="#ff00ff" stroke-width="2" filter="url(#shadow)"/>
+  <text x="565" y="308" text-anchor="middle" font-size="14" font-weight="700" fill="#ff00ff">ACP+</text>
 
   <!-- Reference CLI — first-party binary, in-process on the Rust API -->
-  <rect x="245" y="335" width="120" height="44" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="305" y="355" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Reference CLI</text>
+  <rect x="245" y="335" width="120" height="44" rx="8" fill="#100f51" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="305" y="355" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Reference CLI</text>
   <text x="305" y="370" text-anchor="middle" font-size="9" fill="#8b949e">first-party binary</text>
   <line x1="365" y1="357" x2="398" y2="357" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
@@ -104,10 +104,10 @@
            V 368 Q 890 376 882 376
            H 408 Q 400 376 400 368
            V 346 Q 400 338 408 338 Z"
-        fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="820" y="320" text-anchor="middle" font-size="13" font-weight="700" fill="#7ee787">Rust API</text>
+        fill="url(#stripeGreen)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="820" y="320" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Rust API</text>
   <text x="820" y="336" text-anchor="middle" font-size="9" fill="#8b949e">native crate / FFI</text>
-  <text x="420" y="361" font-size="10" fill="#7ee787" fill-opacity="0.85">in-process</text>
+  <text x="420" y="361" font-size="10" fill="#ffffff" fill-opacity="0.85">in-process</text>
 
   <!-- ACP+ sits on the Rust API -->
   <line x1="470" y1="326" x2="470" y2="336" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -118,24 +118,24 @@
   <line x1="660" y1="378" x2="660" y2="393" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Language bindings — small, off the side of the Rust API arm -->
-  <rect x="920" y="288" width="100" height="26" rx="6" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.2" filter="url(#shadow)"/>
-  <text x="970" y="305" text-anchor="middle" font-size="10" font-weight="700" fill="#7ee787">Swift</text>
+  <rect x="920" y="288" width="100" height="26" rx="6" fill="url(#stripeGreen)" stroke="#ffffff" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="970" y="305" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">Swift</text>
   <line x1="920" y1="301" x2="893" y2="301" stroke="#8b949e" stroke-width="1.2" marker-end="url(#arr)"/>
 
-  <rect x="920" y="320" width="100" height="26" rx="6" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.2" filter="url(#shadow)"/>
-  <text x="970" y="337" text-anchor="middle" font-size="10" font-weight="700" fill="#7ee787">Kotlin</text>
+  <rect x="920" y="320" width="100" height="26" rx="6" fill="url(#stripeGreen)" stroke="#ffffff" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="970" y="337" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">Kotlin</text>
   <line x1="920" y1="333" x2="893" y2="333" stroke="#8b949e" stroke-width="1.2" marker-end="url(#arr)"/>
 
-  <rect x="920" y="352" width="100" height="26" rx="6" fill="#0f1d0b" stroke="#7ee787" stroke-width="1.2" stroke-dasharray="5,3" filter="url(#shadow)"/>
-  <text x="970" y="363" text-anchor="middle" font-size="10" font-weight="700" fill="#7ee787">…</text>
+  <rect x="920" y="352" width="100" height="26" rx="6" fill="#100f51" stroke="#ffffff" stroke-width="1.2" stroke-dasharray="5,3" filter="url(#shadow)"/>
+  <text x="970" y="363" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">…</text>
   <text x="970" y="373" text-anchor="middle" font-size="7" fill="#8b949e">Python · TS · Go</text>
   <line x1="920" y1="365" x2="893" y2="365" stroke="#8b949e" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- GOOSE CORE                                  -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="400" y="395" width="490" height="170" rx="12" fill="#161b22" stroke="#7ee787" stroke-width="2" filter="url(#shadow)"/>
-  <text x="645" y="421" text-anchor="middle" font-size="15" font-weight="700" fill="#7ee787">Goose Core</text>
+  <rect x="400" y="395" width="490" height="170" rx="12" fill="#161b22" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/>
+  <text x="645" y="421" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">Goose Core</text>
   <line x1="420" y1="431" x2="870" y2="431" stroke="#30363d" stroke-width="1"/>
 
   <text x="430" y="451" font-size="10" fill="#e6edf3">• Agent loop</text>
@@ -147,26 +147,26 @@
   <text x="620" y="467" font-size="10" fill="#e6edf3">• Context mgmt</text>
   <text x="620" y="483" font-size="10" fill="#e6edf3">• Automations &amp; scheduling</text>
   <!-- Striped underlays for "in progress" items -->
-  <rect x="618" y="489" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="620" y="499" font-size="10" fill="#7ee787">• Pluggable memory system</text>
-  <rect x="618" y="505" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="620" y="515" font-size="10" fill="#7ee787">• Sandbox / run anywhere</text>
-  <rect x="618" y="521" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="620" y="531" font-size="10" fill="#7ee787">• Router / model selection</text>
-  <rect x="618" y="537" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#7ee787" stroke-width="0.6" stroke-opacity="0.5"/>
-  <text x="620" y="547" font-size="10" fill="#7ee787">• Benchmarking</text>
+  <rect x="618" y="489" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="620" y="499" font-size="10" fill="#ffffff">• Pluggable memory system</text>
+  <rect x="618" y="505" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="620" y="515" font-size="10" fill="#ffffff">• Sandbox / run anywhere</text>
+  <rect x="618" y="521" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="620" y="531" font-size="10" fill="#ffffff">• Router / model selection</text>
+  <rect x="618" y="537" width="160" height="13" rx="2" fill="url(#stripeGreenInline)" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.5"/>
+  <text x="620" y="547" font-size="10" fill="#ffffff">• Benchmarking</text>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- MCP / Skills / Plugins — LEFT of Core       -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="240" y="395" width="130" height="40" rx="8" fill="#161b22" stroke="#ffa657" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="305" y="420" text-anchor="middle" font-size="12" font-weight="600" fill="#ffa657">MCP</text>
+  <rect x="240" y="395" width="130" height="40" rx="8" fill="#161b22" stroke="#ff00ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="305" y="420" text-anchor="middle" font-size="12" font-weight="600" fill="#ff00ff">MCP</text>
 
-  <rect x="240" y="445" width="130" height="40" rx="8" fill="#161b22" stroke="#ffa657" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="305" y="470" text-anchor="middle" font-size="12" font-weight="600" fill="#ffa657">Skills</text>
+  <rect x="240" y="445" width="130" height="40" rx="8" fill="#161b22" stroke="#ff00ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="305" y="470" text-anchor="middle" font-size="12" font-weight="600" fill="#ff00ff">Skills</text>
 
-  <rect x="240" y="495" width="130" height="40" rx="8" fill="#161b22" stroke="#ffa657" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="305" y="520" text-anchor="middle" font-size="12" font-weight="600" fill="#ffa657">Plugins</text>
+  <rect x="240" y="495" width="130" height="40" rx="8" fill="#161b22" stroke="#ff00ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="305" y="520" text-anchor="middle" font-size="12" font-weight="600" fill="#ff00ff">Plugins</text>
 
   <!-- Goose Core ← MCP / Skills / Plugins (arrows from left into Core) -->
   <line x1="370" y1="415" x2="400" y2="437" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -181,12 +181,12 @@
   <line x1="590" y1="565" x2="590" y2="625" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Providers bar -->
-  <rect x="160" y="625" width="800" height="42" rx="8" fill="#0f1d0b" stroke="#7ee787" stroke-width="2" filter="url(#shadow)"/>
-  <text x="320" y="651" text-anchor="middle" font-size="14" font-weight="700" fill="#7ee787">Providers</text>
+  <rect x="160" y="625" width="800" height="42" rx="8" fill="#100f51" stroke="#ffffff" stroke-width="2" filter="url(#shadow)"/>
+  <text x="320" y="651" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Providers</text>
 
   <!-- Router chip nested inside Providers bar (see "Router / model selection" in Core) -->
-  <rect x="780" y="634" width="160" height="24" rx="6" fill="url(#stripeGreen)" stroke="#7ee787" stroke-width="1.5"/>
-  <text x="860" y="651" text-anchor="middle" font-size="11" font-weight="700" fill="#7ee787">Router</text>
+  <rect x="780" y="634" width="160" height="24" rx="6" fill="url(#stripeGreen)" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="860" y="651" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">Router</text>
 
   <!-- Lines from Providers bar down to each child -->
   <line x1="230" y1="667" x2="230" y2="725" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -195,34 +195,34 @@
   <line x1="880" y1="667" x2="880" y2="725" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Cloud Models -->
-  <rect x="150" y="725" width="160" height="60" rx="10" fill="#161b22" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="230" y="750" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Cloud Models</text>
+  <rect x="150" y="725" width="160" height="60" rx="10" fill="#161b22" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="230" y="750" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Cloud Models</text>
   <text x="230" y="767" text-anchor="middle" font-size="9" fill="#8b949e">OpenAI · Anthropic · Google</text>
   <text x="230" y="779" text-anchor="middle" font-size="9" fill="#8b949e">Azure · Bedrock · …</text>
 
   <!-- Declarative Providers -->
-  <rect x="360" y="725" width="180" height="60" rx="10" fill="#161b22" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="450" y="745" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Declarative</text>
-  <text x="450" y="760" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Providers</text>
+  <rect x="360" y="725" width="180" height="60" rx="10" fill="#161b22" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="450" y="745" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Declarative</text>
+  <text x="450" y="760" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Providers</text>
   <text x="450" y="779" text-anchor="middle" font-size="9" fill="#8b949e">YAML / config-driven</text>
 
   <!-- Local Models -->
-  <rect x="600" y="725" width="140" height="60" rx="10" fill="#161b22" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="670" y="750" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Local Models</text>
+  <rect x="600" y="725" width="140" height="60" rx="10" fill="#161b22" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="670" y="750" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Local Models</text>
   <text x="670" y="767" text-anchor="middle" font-size="9" fill="#8b949e">Ollama · llama.cpp</text>
   <text x="670" y="779" text-anchor="middle" font-size="9" fill="#8b949e">GGUF · MLX</text>
 
   <!-- Mesh -->
-  <rect x="810" y="725" width="140" height="60" rx="10" fill="#161b22" stroke="#7ee787" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="880" y="750" text-anchor="middle" font-size="12" font-weight="700" fill="#7ee787">Mesh</text>
+  <rect x="810" y="725" width="140" height="60" rx="10" fill="#161b22" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="880" y="750" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Mesh</text>
   <text x="880" y="767" text-anchor="middle" font-size="9" fill="#8b949e">Distributed inference</text>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- ACP connects directly to the Providers bar  -->
   <!-- ═══════════════════════════════════════════ -->
 
-  <rect x="260" y="820" width="160" height="42" rx="8" fill="#2d1f00" stroke="#ffa657" stroke-width="2" filter="url(#shadow)"/>
-  <text x="340" y="846" text-anchor="middle" font-size="13" font-weight="700" fill="#ffa657">ACP</text>
+  <rect x="260" y="820" width="160" height="42" rx="8" fill="#2a0033" stroke="#ff00ff" stroke-width="2" filter="url(#shadow)"/>
+  <text x="340" y="846" text-anchor="middle" font-size="13" font-weight="700" fill="#ff00ff">ACP</text>
 
   <!-- Providers bar left edge down to ACP -->
   <polyline points="160,646 80,646 80,841 260,841" fill="none" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
@@ -230,14 +230,14 @@
   <!-- Other Agents — a natural-looking cascade of cards -->
   <text x="500" y="798" font-size="9" font-style="italic" fill="#8b949e">Other Agents</text>
 
-  <rect x="521" y="804" width="150" height="40" rx="8" fill="#0d1117" stroke="#58a6ff" stroke-width="1" stroke-opacity="0.55"/>
-  <text x="533" y="818" font-size="10" font-weight="600" fill="#58a6ff" fill-opacity="0.55">Gemini CLI …</text>
+  <rect x="521" y="804" width="150" height="40" rx="8" fill="#0d1117" stroke="#0000ff" stroke-width="1" stroke-opacity="0.55"/>
+  <text x="533" y="818" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.55">Gemini CLI …</text>
 
-  <rect x="505" y="820" width="150" height="40" rx="8" fill="#11161d" stroke="#58a6ff" stroke-width="1.2" stroke-opacity="0.75"/>
-  <text x="517" y="834" font-size="10" font-weight="600" fill="#58a6ff" fill-opacity="0.75">Codex</text>
+  <rect x="505" y="820" width="150" height="40" rx="8" fill="#11161d" stroke="#0000ff" stroke-width="1.2" stroke-opacity="0.75"/>
+  <text x="517" y="834" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.75">Codex</text>
 
-  <rect x="489" y="836" width="150" height="40" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="564" y="861" text-anchor="middle" font-size="11" font-weight="600" fill="#58a6ff">Claude Code</text>
+  <rect x="489" y="836" width="150" height="40" rx="8" fill="#161b22" stroke="#0000ff" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="564" y="861" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Claude Code</text>
 
   <!-- Agents --> ACP -->
   <line x1="489" y1="852" x2="420" y2="846" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arr)"/>
