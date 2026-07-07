@@ -20,7 +20,7 @@
   <rect width="1040" height="880" fill="#0d1117"/>
 
   <!-- Title -->
-  <text x="20" y="20" font-size="13" font-weight="700" fill="#e6edf3">Goose SDK — architecture</text>
+  <text x="20" y="20" font-size="13" font-weight="700" fill="#e6edf3">Goose Development Kit — architecture</text>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- KEY                                         -->
